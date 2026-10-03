@@ -137,3 +137,19 @@ Desktop.ini
 ![Bb]in/data
 *.db
 .vs/
+#########################
+# ofxTwoscilloscope
+#########################
+
+# the examples' builds, but not their data
+*/bin/*
+!*/bin/data/
+
+# copied from data/ by the makefiles and the project generator
+*/bin/data/hershey_fonts/
+
+# files the examples write
+example-*/bin/data/XYscope_*.wav
+example-*/bin/data/export_*.wav
+example-*/bin/data/shapes_*.svg
+example-*/bin/data/transformed_*

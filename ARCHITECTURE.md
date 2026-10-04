@@ -137,6 +137,13 @@ one `ofParameterGroup` per effect, collected by the chain for ofxGui. Every effe
 The processed loop is exposed as audio (`getProcessedCycle()`), so an `XYscope` can
 loop it with `setWaveforms()`: the altered shape becomes playable XYscope audio again.
 
+## Examples
+
+* **`example-encode`**: vector shapes -> XYscope format audio. Draws a scene into an `XYscope` to output X (left) and Y (right) audio.
+* **`example-decode`**: XYscope format audio -> vector shapes. Plays an audio file (or line input) through an `Oscilloscope` to render an analog beam, and decodes the audio back into vector shapes.
+* **`example-transform`**: vector shape -> XY audio -> audio effects -> new vector shape. Encodes a shape into audio, runs it through an `XYEffectChain`, and decodes it back, playing the result out the sound card.
+* **`example-latk`**: projects a 3D Latk animation (typically drawn in VR) to 2D, encodes it, transforms it with an `XYEffectChain`, and draws the altered audio with an `OsciMesh`. Uses a custom `LatkScopeRenderer` to keep track of individual strokes through the pipeline so they can be drawn in their original colors.
+
 ## Files
 
 ### `WavFile`

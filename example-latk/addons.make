@@ -1,0 +1,4 @@
+ofxGui
+ofxLatk
+ofxPoco
+ofxTwoscilloscope
